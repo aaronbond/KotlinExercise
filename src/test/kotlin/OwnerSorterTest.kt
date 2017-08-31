@@ -7,8 +7,8 @@ import org.junit.Test
  */
 internal class OwnerSorterTest {
 
-    val sorter = OwnerSorter()
-    val pets: MutableList<Pet> = mutableListOf(Pet("Fido", "Dog"), Pet("Garfield", "Cat"))
+    private val sorter = OwnerSorter()
+    private val pets: MutableList<Pet> = mutableListOf(Pet("Fido", "Dog"), Pet("Garfield", "Cat"))
 
     @Test
     fun shouldHandleNullPets() {
@@ -27,8 +27,8 @@ internal class OwnerSorterTest {
         val femaleResult = sorter.sortCatsByOwnerGender(owners, "Female")
         val maleResult = sorter.sortCatsByOwnerGender(owners, "Male")
 
-        assert(femaleResult.size == 1 && femaleResult.get(0).name == "catty")
-        assert(maleResult.size == 1 && maleResult.get(0).name == "Garfield")
+        assert(femaleResult.size == 1 && femaleResult[0].name == "catty")
+        assert(maleResult.size == 1 && maleResult[0].name == "Garfield")
     }
 
     @Test
@@ -46,6 +46,6 @@ internal class OwnerSorterTest {
 
         val result = sorter.sortCatsByOwnerGender(listOf(owner), "Male")
 
-        assert(result.get(0).name == "A" && result.get(1).name == "F" && result.get(2).name == "Z")
+        assert(result[0].name == "A" && result[1].name == "F" && result[2].name == "Z")
     }
 }
