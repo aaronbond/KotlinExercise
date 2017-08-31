@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/KotlinExercise.iml" filepath="$PROJECT_DIR$/KotlinExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KotlinExercise_main.iml" filepath="$PROJECT_DIR$/.idea/modules/KotlinExercise_main.iml" group="KotlinExercise" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KotlinExercise_test.iml" filepath="$PROJECT_DIR$/.idea/modules/KotlinExercise_test.iml" group="KotlinExercise" />
     </modules>
   </component>
 </project>
