@@ -6,7 +6,7 @@ import main.kotlin.model.Pet
  */
 class OwnerSorter {
 
-    fun sortCatsByOwnerGender(owners: ArrayList<Owner>, gender: String): List<Pet> {
+    fun sortCatsByOwnerGender(owners: List<Owner>, gender: String): List<Pet> {
         val pets = owners.filter { it.gender == gender }
                 .filter { it.pets != null }
                 .flatMap { it.pets!!.filter { it.type == "Cat" } }
